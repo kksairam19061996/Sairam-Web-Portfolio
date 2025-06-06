@@ -53,6 +53,37 @@ document.addEventListener('DOMContentLoaded', updateCarouselClasses);
 
 
 
+const navLinks = document.querySelectorAll(".nav-bar ul li a");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute("id");
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+}, {
+  threshold: 0.6
+});
+
+// Observe all sections
+document.querySelectorAll("section").forEach(section => {
+  observer.observe(section);
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(nav => nav.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+
 
 
 
