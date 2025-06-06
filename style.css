@@ -67,11 +67,13 @@ body {
 
 .contact-info {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   font-size: 12.25px;
-  position: absolute;
-  right: 14%;
+  position: fixed;
+  right: 6%;
 }
+
+
 
 .contact-info a {
   color: #00f7ff;
@@ -138,7 +140,9 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  flex: 1;
+  /* flex: 1; */
+  /* position: fixed; */
+  right: 5%;
   /* Takes 1/4 space */
 }
 
