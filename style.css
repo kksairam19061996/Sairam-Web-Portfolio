@@ -233,10 +233,16 @@ body {
 /* Optional: Use aspect ratio */
 .hero-wrapper::before {
   content: "";
-  display: block;
-  padding-top: 50%;
-  /* 16:8 ratio = 50% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 70%);
+  z-index: 1;
+  pointer-events: none;
 }
+
 
 .hero-text {
   position: absolute;
@@ -258,12 +264,13 @@ body {
 }
 
 .hero-text p {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   font-weight: bold;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   text-shadow: 0px 0px 20px #000000;
+  max-width: 650px;
 }
 
 .btn-primary {
