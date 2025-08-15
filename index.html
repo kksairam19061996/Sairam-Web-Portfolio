@@ -2,520 +2,535 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SaiRam Kandukuri | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaiRam Kandukuri | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="main-header">
-        <div class="container">
-            <div class="logo-area">
-                <img src="assets/profile-picture.png" alt="Logo" class="logo" />
-                <div class="brand-text">
-                    <h4>SAIRAM KANDUKURI</h4>
-                    <p>Dynamics 365 & Power Platform Developer</p>
-                </div>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo-area">
+        <img src="assets/profile-picture.png" alt="Logo" class="logo" />
+        <div class="brand-text">
+          <h4>SAIRAM KANDUKURI</h4>
+          <p>Dynamics 365 & Power Platform Developer</p>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="email">
+          <strong>Write Me</strong><br />
+          <a href="mailto:kksairam1906@gmail.com">kksairam1906@gmail.com</a>
+        </div>
+        <div class="phone">
+          <strong>Call Me</strong><br />
+          +44 (0) 7454797335
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kksairam19061996/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/kksairam19061996" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/sark_1906" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:kksairam1906@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <!-- Left Side: Hamburger + Menu -->
+        <div class="nav-left">
+          <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <span id="selected-section" class="selected-section"></span>
+          <ul id="navLinks" class="nav-links" data-collapsible>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE HEADER ===== -->
+<div class="mobile-header">
+  <div class="mobile-top">
+    <img src="assets/profile-picture.png" alt="Logo" class="logo" />
+    <div class="brand-text">
+      <h4>SAIRAM KANDUKURI</h4>
+      <p>Dynamics 365 & Power Platform Developer</p>
+    </div>
+  </div>
+
+  <div class="mobile-contact">
+    <div class="mobile-col">
+      <div class="mini-label">Media</div>
+      <div class="mobile-icons">
+        <a href="https://www.linkedin.com/in/kksairam19061996/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kksairam19061996" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/sark_1906" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="mobile-col">
+      <div class="mini-label">Contact</div>
+      <div class="mobile-icons">
+        <a href="mailto:kksairam1906@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+447454797335"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </div>
+
+    <div class="mobile-menu">
+    <ul id="mobileNav">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+</div>
+
+
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div class="hero-wrapper">
+      <img src="assets/portfolio-bg.jpeg" alt="Hero Image" class="hero-img" />
+      <div class="hero-text">
+        <h2>Hello, I’m SAIRAM!</h2>
+        <p>Microsoft Certified Power Platform Developer in the UK</p><br>
+        <a href="#contact" class="btn-primary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am a <strong>Microsoft Certified Dynamics 365 & Power Platform Developer</strong> with 5 years of
+          experience delivering robust, scalable solutions across Sales, Customer Service, and Marketing modules. My
+          expertise spans the full SDLC—from requirements gathering and system design to development, testing, and
+          deployment.
+        </p><br>
+        <p>
+          I specialize in building end-to-end business applications using <strong>Microsoft Dynamics 365</strong>,
+          <strong>Power Apps</strong>, <strong>Power Automate</strong>, and <strong>Power BI</strong>, with strong
+          proficiency in <strong>C#</strong>, <strong>ASP.NET</strong>, and <strong>JavaScript</strong> for custom
+          development. I am well-versed in <strong>SQL Server</strong>, <strong>Azure cloud deployments</strong>,
+          <strong>CI/CD pipelines</strong>, and the integration of Microsoft 365 services.
+        </p><br>
+        <p>
+          Having worked within both Agile and Waterfall frameworks, I bring hands-on experience using tools like
+          <strong>JIRA</strong>, <strong>Microsoft Project</strong>, and <strong>SSRS</strong> to manage and track
+          delivery. I’m passionate about creating clean, maintainable solutions that align with business objectives and
+          drive meaningful user outcomes.
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="assets/power-platform-img.png" alt="Sai Ram Kandukuri" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section">
+    <div class="projects-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="timeline">
+
+        <!-- Project 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" tabindex="0">
+            <p><strong>Project Title: </strong> <em>DfE IRIS - Dynamics 365 & SharePoint Integration
+                Modernization using Power Automate and Code Refactoring.</em>
+              <br><strong>Company: </strong>NTT DATA UK&I
+              <br><strong>Client:</strong> Department for Education (DfE), UK
+              <br><strong>Role: </strong>Power Platform & Dynamics 365 Developer
+              <br><strong>Duration: </strong> Oct 2024 – Present
+            </p>
+            <br>
+            <p class="summary">Modernized a legacy Dynamics CRM and SharePoint system by replacing custom
+              code with Power Platform solutions, improving integration, security, and maintainability.
+            </p>
+            <div class="details">
+              <h3>Contributions:</h3>
+              <ul>
+                <li>Replaced pro-code logic with modular, scalable Power Automate cloud flows.</li>
+                <li>Developed automated, scheduled, and instant flows for end-to-end case lifecycle</li>
+                <li>Integrated SharePoint using OOTB document management, REST APIs, and viewer.</li>
+                <li>Automated folder- and item-level permissioning based on case restrictions.</li>
+                <li>Restricted SharePoint document access and search visibility for unauthorized users.</li>
+                <li>Used connection references and JSON-based environment variables for ALM.</li>
+                <li>Refactored legacy plugins, workflow assemblies, and Azure webjobs interacting with
+                  SharePoint.</li>
+                <li>Leveraged tools like Power Automate, Power Fx, C#, Visual Studio, and XrmToolBox.</li>
+                <li>Managed CI/CD via Git and Azure DevOps across Dev, Test, and Pre-Prod.</li>
+                <li>Followed Agile delivery with sprints, stand-ups, backlog grooming, and
+                  retrospectives.</li>
+                <li>Authored detailed documentation for flow logic, setup, and deployment.</li>
+              </ul>
+              <p class="tech"><strong> Tech Stack: </strong>Power Automate, Power Fx, Canvas Apps,
+                Model-Driven Apps, XrmToolBox, Plugin Registration Tool, Plugin Trace Viewer, Visual
+                Studio 2022, C#, Early Bound Generator, JSON, Postman, and Power Apps Monitor.</p>
             </div>
-
-            <div class="contact-info">
-                <div class="email">
-                    <strong>Write Me</strong><br />
-                    <a href="mailto:kksairam1906@gmail.com">kksairam1906@gmail.com</a>
-                </div>
-                <div class="phone">
-                    <strong>Call Me</strong><br />
-                    +44 (0) 7454797335
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/kksairam19061996/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/kksairam19061996" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/sark_1906" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:kksairam1906@gmail.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-
-
-
+          </div>
         </div>
 
-        <nav class="nav-bar">
-            <div class="nav-container">
-                <!-- Left Side: Hamburger + Menu -->
-                <div class="nav-left">
-                    <div class="hamburger" id="hamburger">
-                        <i class="fas fa-bars"></i>
-                    </div>
-
-                    <span id="selected-section" class="selected-section"></span>
-                    <ul id="navLinks" class="nav-links">
-                        <li><a href="#hero" class="active">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <!-- Project 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" tabindex="0">
+            <p><strong>Project Title: </strong> <em>Linnworks Integration with Power Platform</em>
+              <br><strong>Company: </strong>Hudda Infotech
+              <br><strong>Client: </strong> XPOSED LONDON, UK
+              <br><strong>Role: </strong>Power Platform Developer
+              <br><strong>Duration: </strong> Oct 2021 – July 2024
+            </p><br>
+            <p class="summary">Executed an inventory automation solution by integrating Linnworks with
+              Microsoft Power Platform.
+              Delivered data-driven, low-code applications to streamline order processing and warehouse
+              operations using Power Apps, Power Automate, and Power BI.</p>
+            <div class="details">
+              <h3>Contributions:</h3>
+              <ul>
+                <li>Developed a custom connector with OAuth2 authentication to integrate Linnworks with
+                  Power Platform, enabling seamless automation for order retrieval, product
+                  management, and inventory updates.</li>
+                <li>Designed a Canvas App to extract SKU items from Linnworks orders, capturing
+                  quantities and warehouse locations with dynamic update functionality.</li>
+                <li>Enabled real-time inventory management by integrating real-time stock updates with
+                  backend data sources.</li>
+                <li>Created and embedded a Power BI dashboard within the app to visualize sales trends,
+                  low stock alerts, and inventory forecasts across daily, weekly, monthly, and annual
+                  views.</li>
+                <li>Improved operational efficiency and decision-making with a user-friendly,
+                  data-driven inventory system.</li>
+              </ul>
+              <p class="tech">Tech Stack: Power Platform, Power BI, MS Dynamic CRM 365, Azure DevOps,
+                CI/CD, SSRS, SharePoint, Jira, SQL Server, Dev, Agile, JSON, Azure Resource Manager,
+                Azure Service Bus, Azure Function, C# Language, JavaScript, Visual Studio, CSS, HTML,
+                Power Automate.</p>
             </div>
-        </nav>
-
-    </header>
-
-
-
-
-    <!-- HERO SECTION -->
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero-section">
-        <div class="hero-wrapper">
-            <img src="assets/portfolio-bg.jpeg" alt="Hero Image" class="hero-img" />
-            <div class="hero-text">
-                <h2>Hello, I’m SAIRAM!</h2>
-                <p>Microsoft Certified Power Platform Developer in the UK</p><br>
-                <a href="#contact" class="btn-primary">Contact Me</a>
-            </div>
+          </div>
         </div>
-    </section>
 
-
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    I am a <strong>Microsoft Certified Dynamics 365 & Power Platform Developer</strong> with 5 years of
-                    experience delivering robust, scalable solutions across Sales, Customer Service, and Marketing
-                    modules. My expertise spans the full SDLC—from requirements gathering and system design to
-                    development, testing, and deployment.
-                </p><br>
-                <p>
-                    I specialize in building end-to-end business applications using <strong>Microsoft Dynamics
-                        365</strong>, <strong>Power Apps</strong>, <strong>Power Automate</strong>, and <strong>Power
-                        BI</strong>, with strong proficiency in <strong>C#</strong>, <strong>ASP.NET</strong>, and
-                    <strong>JavaScript</strong> for custom development. I am well-versed in <strong>SQL Server</strong>,
-                    <strong>Azure cloud deployments</strong>, <strong>CI/CD pipelines</strong>, and the integration of
-                    Microsoft 365 services.
-                </p><br>
-                <p>
-                    Having worked within both Agile and Waterfall frameworks, I bring hands-on experience using tools
-                    like <strong>JIRA</strong>, <strong>Microsoft Project</strong>, and <strong>SSRS</strong> to manage
-                    and track delivery. I’m passionate about creating clean, maintainable solutions that align with
-                    business objectives and drive meaningful user outcomes.
-                </p>
+        <!-- Project 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card" tabindex="0">
+            <p><strong>Project Title: </strong> <em>D365 CRM Customization & Power Platform Integration</em>
+              <br><strong>Company: </strong>GlobalData Plc
+              <br><strong>Role: </strong>Associate Analyst/Developer
+              <br><strong>Duration: </strong> July 2019 – Aug 2021
+            </p><br>
+            <p class="summary">Live dashboard for tracking KPIs and stock shortage predictions.</p>
+            <div class="details">
+              <h3>Contributions:</h3>
+              <ul>
+                <li>Customized Dynamics 365 CRM using forms, business rules, workflows, and Power
+                  Automate to automate business processes.</li>
+                <li>Built Power Apps (Canvas & Model-Driven) and integrated with Dataverse for seamless
+                  data management.</li>
+                <li>Developed Power BI dashboards with Row-Level Security to deliver sales and service
+                  insights to stakeholders.</li>
+                <li>Utilized C#, ASP.NET, and SQL to build and maintain backend services, including REST
+                  APIs for data integration.</li>
+                <li>Managed user roles, data imports, and environment setups using Power Platform tools,
+                  PowerShell, and Azure.</li>
+              </ul>
+              <p class="tech"><strong> Tech Stack: </strong> Dynamics 365 CRM, Power Apps, Power Automate,
+                Power BI, Dataverse, Excel, JIRA, Agile</p>
             </div>
-            <div class="about-photo">
-                <img src="assets/power-platform-img.png" alt="Sai Ram Kandukuri" />
-            </div>
+          </div>
         </div>
-    </section>
 
+      </div>
+    </div>
+  </section>
 
-    <section id="projects" class="projects-section">
-        <div class="projects-container">
-            <h2 class="section-title">Projects</h2>
-            <div class="timeline">
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <h2 class="services-title">My Services</h2>
+      <div class="carousel-container">
+        <button class="arrow left" onclick="rotateLeft()">&#10094;❮</button>
 
-                <!-- Project 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-card">
-                        <p><strong>Project Title: </strong> <em>DfE IRIS - Dynamics 365 & SharePoint Integration
-                                Modernization using Power Automate and Code Refactoring.</em>
-                            <br><strong>Company: </strong>NTT DATA UK&I
-                            <br><strong>Client:</strong> Department for Education (DfE), UK
-                            <br><strong>Role: </strong>Power Platform & Dynamics 365 Developer
-                            <br><strong>Duration: </strong> Oct 2024 – Present
-                        </p>
-                        <br>
-                        <p class="summary">Modernized a legacy Dynamics CRM and SharePoint system by replacing custom
-                            code with Power Platform solutions, improving integration, security, and maintainability.
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-item" data-title="Power BI Development"
+            data-desc="Transform raw data into interactive dashboards and visual reports that drive informed business decisions using Power BI's powerful analytics tools.">
+            <img src="assets/power-bi.png" alt="Power BI" />
+          </div>
 
-                        </p>
-                        <div class="details">
-                            <h3>Contributions:</h3>
-                            <ul>
-                                <li>Replaced pro-code logic with modular, scalable Power Automate cloud flows.</li>
-                                <li>Developed automated, scheduled, and instant flows for end-to-end case lifecycle</li>
-                                <li>Integrated SharePoint using OOTB document management, REST APIs, and viewer.</li>
-                                <li>Automated folder- and item-level permissioning based on case restrictions.</li>
-                                <li>Restricted SharePoint document access and search visibility for unauthorized users.
-                                </li>
-                                <li>Used connection references and JSON-based environment variables for ALM.</li>
-                                <li>Refactored legacy plugins, workflow assemblies, and Azure webjobs interacting with
-                                    SharePoint.</li>
-                                <li>Leveraged tools like Power Automate, Power Fx, C#, Visual Studio, and XrmToolBox.
-                                </li>
-                                <li>Managed CI/CD via Git and Azure DevOps across Dev, Test, and Pre-Prod.</li>
-                                <li>Followed Agile delivery with sprints, stand-ups, backlog grooming, and
-                                    retrospectives.</li>
-                                <li>Authored detailed documentation for flow logic, setup, and deployment.</li>
-                            </ul>
-                            <p class="tech"><strong> Tech Stack: </strong>Power Automate, Power Fx, Canvas Apps,
-                                Model-Driven Apps, XrmToolBox, Plugin Registration Tool, Plugin Trace Viewer, Visual
-                                Studio 2022, C#, Early Bound Generator, JSON, Postman, and Power Apps Monitor.</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="carousel-item" data-title="Model-Driven Apps Development"
+            data-desc="Build scalable, data-centric enterprise applications using Dataverse, business logic, and pre-built components with minimal coding.">
+            <img src="assets/model-driven-app.png" alt="Model-Driven" />
+          </div>
 
-                <!-- Project 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-card">
-                        <p><strong>Project Title: </strong> <em>Linnworks Integration with Power Platform</em>
-                            <br><strong>Company: </strong>Hudda Infotech
-                            <br><strong>Client: </strong> XPOSED LONDON, UK
-                            <br><strong>Role: </strong>Power Platform Developer
-                            <br><strong>Duration: </strong> Oct 2021 – July 2024
-                        </p><br>
-                        <p class="summary">Executed an inventory automation solution by integrating Linnworks with
-                            Microsoft Power Platform.
-                            Delivered data-driven, low-code applications to streamline order processing and warehouse
-                            operations using Power Apps, Power Automate, and Power BI.</p>
-                        <div class="details">
-                            <h3>Contributions:</h3>
-                            <ul>
-                                <li>Developed a custom connector with OAuth2 authentication to integrate Linnworks with
-                                    Power Platform, enabling seamless automation for order retrieval, product
-                                    management, and inventory updates.</li>
-                                <li>Designed a Canvas App to extract SKU items from Linnworks orders, capturing
-                                    quantities and warehouse locations with dynamic update functionality.</li>
-                                <li>Enabled real-time inventory management by integrating real-time stock updates with
-                                    backend data sources.</li>
-                                <li>Created and embedded a Power BI dashboard within the app to visualize sales trends,
-                                    low stock alerts, and inventory forecasts across daily, weekly, monthly, and annual
-                                    views.</li>
-                                <li>Improved operational efficiency and decision-making with a user-friendly,
-                                    data-driven inventory system.</li>
-                            </ul>
-                            <p class="tech">Tech Stack: Power Platform, Power BI, MS Dynamic CRM 365, Azure DevOps,
-                                CI/CD, SSRS, SharePoint, Jira, SQL Server, Dev, Agile, JSON, Azure Resource Manager,
-                                Azure Service Bus, Azure Function, C# Language, JavaScript, Visual Studio, CSS, HTML,
-                                Power Automate.</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="carousel-item" data-title="Canvas Apps Development"
+            data-desc="Design intuitive, pixel-perfect applications using a flexible drag-and-drop interface that connects seamlessly with over 700 data sources.">
+            <img src="assets/canvas-app.png" alt="Canvas Apps" />
+          </div>
 
-                <!-- Project 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-card">
-                        <p><strong>Project Title: </strong> <em>D365 CRM Customization & Power Platform Integration</em>
-                            <br><strong>Company: </strong>GlobalData Plc
-                            <br><strong>Role: </strong>Associate Analyst/Developer
-                            <br><strong>Duration: </strong> July 2019 – Aug 2021
-                        </p><br>
-                        <p class="summary">Live dashboard for tracking KPIs and stock shortage predictions.</p>
-                        <div class="details">
-                            <h3>Contributions:</h3>
-                            <ul>
-                                <li>Customized Dynamics 365 CRM using forms, business rules, workflows, and Power
-                                    Automate to automate business processes.</li>
-                                <li>Built Power Apps (Canvas & Model-Driven) and integrated with Dataverse for seamless
-                                    data management.</li>
-                                <li>Developed Power BI dashboards with Row-Level Security to deliver sales and service
-                                    insights to stakeholders.</li>
-                                <li>Utilized C#, ASP.NET, and SQL to build and maintain backend services, including REST
-                                    APIs for data integration.</li>
-                                <li>Managed user roles, data imports, and environment setups using Power Platform tools,
-                                    PowerShell, and Azure.</li>
-                            </ul>
-                            <p class="tech"><strong> Tech Stack: </strong> Dynamics 365 CRM, Power Apps, Power Automate,
-                                Power BI, Dataverse, Excel, JIRA, Agile</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="carousel-item" data-title="Power Pages"
+            data-desc="Create secure, responsive business websites that connect to Dataverse and enable external user interaction using Web API, Liquid templates, and role-based access.">
+            <img src="assets/power-pages.png" alt="Power Pages" />
+          </div>
 
-            </div>
+          <div class="carousel-item" data-title="Power Automate"
+            data-desc="Automate repetitive tasks, approvals, and integrations across services and apps with intelligent workflows and trigger-based logic.">
+            <img src="assets/power-automate.png" alt="Power Automate" />
+          </div>
+
+          <div class="carousel-item" data-title="SharePoint Integration"
+            data-desc="Integrate Dynamics 365 with SharePoint to streamline document storage, permissions, and collaboration without leaving your CRM environment.">
+            <img src="assets/sharepoint-integration.png" alt="SharePoint" />
+          </div>
+
+          <div class="carousel-item" data-title="Code Refactoring"
+            data-desc="Improve CRM performance and maintainability by modernizing legacy business logic and plugins using clean, efficient, and scalable C# code.">
+            <img src="assets/code-refactoring.png" alt="Refactoring" />
+          </div>
         </div>
-    </section>
 
+        <button class="arrow right" onclick="rotateRight()">&#10095❯</button>
+      </div>
 
+      <div class="service-info">
+        <h3 id="serviceTitle"></h3>
+        <p id="serviceDesc"></p>
+      </div>
+    </div>
+  </section>
 
-    <section id="services" class="services-section">
-        <div class="services-container">
-            <h2 class="services-title">My Services</h2>
-            <div class="carousel-container">
-                <button class="arrow left" onclick="rotateLeft()">&#10094;❮</button>
+  <!-- EDUCATION -->
+  <section class="education-section" id="education">
+    <div class="education-container">
+      <h2 class="section-title">Education</h2>
 
-                <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-item" data-title="Power BI Development"
-                        data-desc="Transform raw data into interactive dashboards and visual reports that drive informed business decisions using Power BI's powerful analytics tools.">
-                        <img src="assets/power-bi.png" alt="Power BI" />
-                    </div>
-
-                    <div class="carousel-item" data-title="Model-Driven Apps Development"
-                        data-desc="Build scalable, data-centric enterprise applications using Dataverse, business logic, and pre-built components with minimal coding.">
-                        <img src="assets/model-driven-app.png" alt="Model-Driven" />
-                    </div>
-
-                    <div class="carousel-item" data-title="Canvas Apps Development"
-                        data-desc="Design intuitive, pixel-perfect applications using a flexible drag-and-drop interface that connects seamlessly with over 700 data sources.">
-                        <img src="assets/canvas-app.png" alt="Canvas Apps" />
-                    </div>
-
-                    <div class="carousel-item" data-title="Power Pages"
-                        data-desc="Create secure, responsive business websites that connect to Dataverse and enable external user interaction using Web API, Liquid templates, and role-based access.">
-                        <img src="assets/power-pages.png" alt="Power Pages" />
-                    </div>
-
-                    <div class="carousel-item" data-title="Power Automate"
-                        data-desc="Automate repetitive tasks, approvals, and integrations across services and apps with intelligent workflows and trigger-based logic.">
-                        <img src="assets/power-automate.png" alt="Power Automate" />
-                    </div>
-
-                    <div class="carousel-item" data-title="SharePoint Integration"
-                        data-desc="Integrate Dynamics 365 with SharePoint to streamline document storage, permissions, and collaboration without leaving your CRM environment.">
-                        <img src="assets/sharepoint-integration.png" alt="SharePoint" />
-                    </div>
-
-                    <div class="carousel-item" data-title="Code Refactoring"
-                        data-desc="Improve CRM performance and maintainability by modernizing legacy business logic and plugins using clean, efficient, and scalable C# code.">
-                        <img src="assets/code-refactoring.png" alt="Refactoring" />
-                    </div>
-                </div>
-
-
-                <button class="arrow right" onclick="rotateRight()">&#10095❯</button>
-            </div>
-
-            <div class="service-info">
-                <h3 id="serviceTitle"></h3>
-                <p id="serviceDesc"></p>
-            </div>
+      <div class="education-card">
+        <div class="edu-left">
+          <img src="assets/hertfordshire-university.png" alt="UK University" />
         </div>
-    </section>
-
-    <section class="education-section" id="education">
-        <div class="education-container">
-            <h2 class="section-title">Education</h2>
-
-            <div class="education-card">
-                <div class="edu-left">
-                    <img src="assets/hertfordshire-university.png" alt="UK University" />
-                </div>
-                <div class="edu-right">
-                    <h3>MSc in Artificial Intelligence & Robotics with Advanced Research</h3>
-                    <p><strong>Hertfordshire, England, UK</strong></p>
-                    <p><em>2021 – 2023</em></p>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <div class="edu-left">
-                    <img src="assets/great-learning.png" alt="great learning" />
-                </div>
-                <div class="edu-right">
-                    <h3>Post Graduation Programme in Data Science Engineering</h3>
-                    <p><strong>Hyderabad, Telangana, India</strong></p>
-                    <p><em>2018 – 2019</em></p>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <div class="edu-left">
-                    <img src="assets/vjit.jpg" alt="vjit" />
-                </div>
-                <div class="edu-right">
-                    <h3>B.Tech in Electrical and Electronics Engineering</h3>
-                    <p><strong>Hyderabad, Telangana, India</strong></p>
-                    <p><em>2014 – 2018</em></p>
-                </div>
-            </div>
-
+        <div class="edu-right">
+          <h3>MSc in AI & Robotics with Advanced Research</h3>
+          <p><strong>Hertfordshire, England, UK</strong></p>
+          <p><em>2021 – 2023</em></p>
         </div>
-    </section>
+      </div>
 
+      <div class="education-card">
+        <div class="edu-left">
+          <img src="assets/great-learning.png" alt="great learning" />
+        </div>
+        <div class="edu-right">
+          <h3>Post Graduation Programme in Data Science </h3>
+          <p><strong>Hyderabad, Telangana, India</strong></p>
+          <p><em>2018 – 2019</em></p>
+        </div>
+      </div>
 
+      <div class="education-card">
+        <div class="edu-left">
+          <img src="assets/vjit.jpg" alt="vjit" />
+        </div>
+        <div class="edu-right">
+          <h3>B.Tech in Electrical and Electronics Engineering</h3>
+          <p><strong>Hyderabad, Telangana, India</strong></p>
+          <p><em>2014 – 2018</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="certifications-section" id="certifications">
-        <div class="certifications-container">
-            <h2 class="section-title">Certifications</h2>
+  <!-- CERTIFICATIONS -->
+  <section class="certifications-section" id="certifications">
+    <div class="certifications-container">
+      <h2 class="section-title">Certifications</h2>
 
-            <div class="certificates-grid">
-
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/SAIRAMKANDUKURI-1627/1D15521EF3F3D750?sharingId"
-                    target="_blank" class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/PL-200.png" alt="PL-200 Certificate">
-                        <div class="certificate-text">
-                            <h3>PL-200 Microsoft Certified:</h3>
-                            <p class="highlight">Power Platform Functional Consultant Associate</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.coursera.org/account/accomplishments/specialization/MEDTU6HC2EFM" target="_blank"
-                    class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/dlai.png" alt="Deep Learning">
-                        <div class="certificate-text">
-                            <h3>Coursera Certified:</h3>
-                            <p class="highlight">Deep Learning Specialization</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.coursera.org/account/accomplishments/specialization/43PUFJJQMWQW" target="_blank"
-                    class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/coursera-logo.png" alt="NLP Specialization">
-                        <div class="certificate-text">
-                            <h3>Coursera Certified:</h3>
-                            <p class="highlight">Natural Language Processing Specialization</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="http://www.skyfilabs.com/verify-certificate/24710089" target="_blank" class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/skyfilabs_logo.jpg" alt="IUCEE">
-                        <div class="certificate-text">
-                            <h3>Skifi Labs Certified:</h3>
-                            <p class="highlight">IUCEE Robotic Challenge</p>
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="https://www.credly.com/badges/0f50219e-a7e7-4f0b-a7a8-f4bed8815b86/linked_in_profile"
-                    target="_blank" class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/aws.jpg" alt="AWS Services">
-                        <div class="certificate-text">
-                            <h3>AWS Certified:</h3>
-                            <p class="highlight">AWS Certified Solutions Architect - Associate</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://www.udemy.com/certificate/UC-6cfde325-9f15-44ec-b56d-f7c68fe887f4/" target="_blank"
-                    class="certificate-link">
-                    <div class="certificate-card">
-                        <img src="assets/udemy_logo.jpg" alt="Udemy Excel">
-                        <div class="certificate-text">
-                            <h3>Udemy Certified:</h3>
-                            <p class="highlight">Learn Microsoft Excel and Create Interactive Dashboards</p>
-                        </div>
-                    </div>
-                </a>
-
+      <div class="certificates-grid">
+        <a href="https://learn.microsoft.com/api/credentials/share/en-us/SAIRAMKANDUKURI-1627/1D15521EF3F3D750?sharingId"
+          target="_blank" class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/PL-200.png" alt="PL-200 Certificate">
+            <div class="certificate-text">
+              <h3>PL-200 Microsoft Certified:</h3>
+              <p class="highlight">Power Platform Functional Consultant Associate</p>
             </div>
-        </div>
-    </section>
+          </div>
+        </a>
 
-
-    <section class="testimonials-section" id="testimonials">
-        <div class="testimonials-container">
-            <h2 class="section-title">Testimonials</h2>
-            <div class="testimonial-cards">
-
-                <div class="testimonial-card">
-                    <img src="assets/shijo.jpg" alt="Client 1" class="testimonial-avatar" />
-                    <p class="testimonial-quote">
-                        <strong>has demonstrated outstanding dedication and technical capability during the IRIS B1
-                            project at NTT DATA.</strong>
-                        <br>Despite the short duration, his commitment, understanding of objectives, and consistent
-                        delivery were key to meeting project timelines. Sai's eagerness to learn and adapt has been
-                        impressive. His performance has been excellent, and there's strong confidence in his continued
-                        growth and future contributions.
-                    </p>
-                    <p class="testimonial-name">— Shijo George, Senior Dynamics 365 and Power Platform Developer, NTT
-                        DATA UK&I</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <img src="assets/srikiran.jpg" alt="Client 2" class="testimonial-avatar" />
-                    <p class="testimonial-quote">
-                        <strong>Sai is a dedicated and proactive team member at NTT DATA, known for his expertise in
-                            Power Automate and the Power Platform.</strong>
-                        <br>He consistently delivers tasks on time, demonstrates strong analytical and problem-solving
-                        skills, and maintains clear documentation. His eagerness to learn, punctuality in meetings, and
-                        thorough testing practices make him a valuable asset to any project. He comes highly recommended
-                        for future initiatives within the organization.
-                    </p>
-                    <p class="testimonial-name">— Srikiran Peruri, Senior Specialist and Team Lead, NTT Data UK&I</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <img src="assets/salam.jpg" alt="Client 3" class="testimonial-avatar" />
-                    <p class="testimonial-quote">"Sairam has demonstrated strong proficiency in the Power Platform,
-                        particularly in Power Automate. His eagerness to learn new skills and willingness to contribute
-                        to plugin development—through editing, maintaining, and testing—underscore his commitment to
-                        continuous improvement. "</p>
-                    <p class="testimonial-name">— Salam Daher, Senior Power Platform Developer, NTT DATA UK&I</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <img src="assets/siddarth.jpg" alt="Client 1" class="testimonial-avatar" />
-                    <p class="testimonial-quote">"Sairam is a talented, hard working, ready to learn student of mine.
-                        Every work assigned to him, he takes with a great pleasure and seriousness. Wish him all the
-                        very best."</p>
-                    <p class="testimonial-name">— Dr Siddartha Ghosh, Director - Office of Industry Affairs | Professor
-                        in VJIT</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <img src="assets/syed-miran.jpg" alt="Client 2" class="testimonial-avatar" />
-                    <p class="testimonial-quote">"I was Sairam's batch mate at the Great Lakes Institute of management
-                        and also partnered with him on a few assignments. During the assignments, not only did he
-                        demonstrate great intelligence by always coming up with unique ideas, he also exhibited
-                        remarkable leadership skills. He always completed his tasks well before deadlines and also
-                        assisted his team mates wherever he could. He was always the most proactive member of the team,
-                        kept himself updated on the assignment's fast changing requirements and effectively communicated
-                        them to everyone involved."</p>
-                    <p class="testimonial-name">— Syed Miran, Researcher at National Meat Research Institute, Hyderabad
-                    </p>
-                </div>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/MEDTU6HC2EFM" target="_blank"
+          class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/dlai.png" alt="Deep Learning">
+            <div class="certificate-text">
+              <h3>Coursera Certified:</h3>
+              <p class="highlight">Deep Learning Specialization</p>
             </div>
-        </div>
-        </div>
-    </section>
+          </div>
+        </a>
 
-    <section class="contact-section" id="contact">
-        <div class="section-container">
-            <h2 class="section-title aligned-title">Contact Me</h2>
-            <form action="https://formsubmit.co/kksairam1906@gmail.com" method="POST" class="contact-form">
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-
-                <button type="submit" class="contact-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-
-    <footer class="footer-section">
-        <div class="footer-container">
-            <p class="footer-name">© 2025 SAIRAM KANDUKURI</p>
-            <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/kksairam19061996/" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/kksairam19061996" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/sark_1906" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:kksairam1906@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.coursera.org/account/accomplishments/specialization/43PUFJJQMWQW" target="_blank"
+          class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/coursera-logo.png" alt="NLP Specialization">
+            <div class="certificate-text">
+              <h3>Coursera Certified:</h3>
+              <p class="highlight">Natural Language Processing Specialization</p>
             </div>
+          </div>
+        </a>
+
+        <a href="http://www.skyfilabs.com/verify-certificate/24710089" target="_blank" class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/skyfilabs_logo.jpg" alt="IUCEE">
+            <div class="certificate-text">
+              <h3>Skifi Labs Certified:</h3>
+              <p class="highlight">IUCEE Robotic Challenge</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.credly.com/badges/0f50219e-a7e7-4f0b-a7a8-f4bed8815b86/linked_in_profile"
+          target="_blank" class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/aws.jpg" alt="AWS Services">
+            <div class="certificate-text">
+              <h3>AWS Certified:</h3>
+              <p class="highlight">AWS Certified Solutions Architect - Associate</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.udemy.com/certificate/UC-6cfde325-9f15-44ec-b56d-f7c68fe887f4/" target="_blank"
+          class="certificate-link">
+          <div class="certificate-card">
+            <img src="assets/udemy_logo.jpg" alt="Udemy Excel">
+            <div class="certificate-text">
+              <h3>Udemy Certified:</h3>
+              <p class="highlight">Learn Microsoft Excel and Create Interactive Dashboards</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonial-cards">
+
+        <div class="testimonial-card">
+          <img src="assets/shijo.jpg" alt="Client 1" class="testimonial-avatar" />
+          <p class="testimonial-quote">
+            <strong>has demonstrated outstanding dedication and technical capability during the IRIS B1
+              project at NTT DATA.</strong>
+            <br>Despite the short duration, his commitment, understanding of objectives, and consistent
+            delivery were key to meeting project timelines. Sai's eagerness to learn and adapt has been
+            impressive. His performance has been excellent, and there's strong confidence in his continued
+            growth and future contributions.
+          </p>
+          <p class="testimonial-name">— Shijo George, Senior Dynamics 365 and Power Platform Developer, NTT
+            DATA UK&I</p>
         </div>
-    </footer>
 
+        <div class="testimonial-card">
+          <img src="assets/srikiran.jpg" alt="Client 2" class="testimonial-avatar" />
+          <p class="testimonial-quote">
+            <strong>Sai is a dedicated and proactive team member at NTT DATA, known for his expertise in
+              Power Automate and the Power Platform.</strong>
+            <br>He consistently delivers tasks on time, demonstrates strong analytical and problem-solving
+            skills, and maintains clear documentation. His eagerness to learn, punctuality in meetings, and
+            thorough testing practices make him a valuable asset to any project. He comes highly recommended
+            for future initiatives within the organization.
+          </p>
+          <p class="testimonial-name">— Srikiran Peruri, Senior Specialist and Team Lead, NTT Data UK&I</p>
+        </div>
 
+        <div class="testimonial-card">
+          <img src="assets/salam.jpg" alt="Client 3" class="testimonial-avatar" />
+          <p class="testimonial-quote">"Sairam has demonstrated strong proficiency in the Power Platform,
+            particularly in Power Automate. His eagerness to learn new skills and willingness to contribute
+            to plugin development—through editing, maintaining, and testing—underscore his commitment to
+            continuous improvement. "</p>
+          <p class="testimonial-name">— Salam Daher, Senior Power Platform Developer, NTT DATA UK&I</p>
+        </div>
 
+        <div class="testimonial-card">
+          <img src="assets/siddarth.jpg" alt="Client 1" class="testimonial-avatar" />
+          <p class="testimonial-quote">"Sairam is a talented, hard working, ready to learn student of mine.
+            Every work assigned to him, he takes with a great pleasure and seriousness. Wish him all the
+            very best."</p>
+          <p class="testimonial-name">— Dr Siddartha Ghosh, Director - Office of Industry Affairs | Professor
+            in VJIT</p>
+        </div>
 
+        <div class="testimonial-card">
+          <img src="assets/syed-miran.jpg" alt="Client 2" class="testimonial-avatar" />
+          <p class="testimonial-quote">"I was Sairam's batch mate at the Great Lakes Institute of management
+            and also partnered with him on a few assignments. During the assignments, not only did he
+            demonstrate great intelligence by always coming up with unique ideas, he also exhibited
+            remarkable leadership skills. He always completed his tasks well before deadlines and also
+            assisted his team mates wherever he could. He was always the most proactive member of the team,
+            kept himself updated on the assignment's fast changing requirements and effectively communicated
+            them to everyone involved."</p>
+          <p class="testimonial-name">— Syed Miran, Researcher at National Meat Research Institute, Hyderabad
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="app.js"></script>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <h2 class="section-title aligned-title">Contact Me</h2>
+      <form action="https://formsubmit.co/kksairam1906@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_captcha" value="false">
 
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <p class="footer-name">© 2025 SAIRAM KANDUKURI</p>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/kksairam19061996/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kksairam19061996" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/sark_1906" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:kksairam1906@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
-
 </html>
